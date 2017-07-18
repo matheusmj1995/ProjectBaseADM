@@ -13,8 +13,9 @@
 	</section>
 	<?php 
 
-		$n1	= $_POST["n1"] ?? 0;
-		$n2	= $_POST["n2"] ?? 0;
+		$soma_id	= $_REQUEST["soma_id"] ?? 0;
+		$n1	= $_REQUEST["n1"] ?? 0;
+		$n2	= $_REQUEST["n2"] ?? 0;
 
 		$soma = ($n1 + $n2);
 	?>
@@ -45,6 +46,7 @@
 					</label>				
 				</div>	
 			</div>
+			<input type="hidden" id="soma_id" name="soma_id" value="<?php $soma_id ?>">					
 		</form>
 	
 	</section>
